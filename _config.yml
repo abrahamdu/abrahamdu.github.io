@@ -1,9 +1,9 @@
 
 # Site settings
 
-url: "anotherpeak.org/"
+url: "http://anotherpeak.org/"
 baseurl: ""
-force-https: True
+force-https: False
 syntax-highlight: True
 encoding: utf-8
 markdown: kramdown
