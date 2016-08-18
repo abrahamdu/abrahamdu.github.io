@@ -1,0 +1,172 @@
+
+# Site settings
+
+url: "http://anotherpeak.org/"
+baseurl: ""
+force-https: True
+syntax-highlight: True
+encoding: utf-8
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  
+
+# Sections shown in the index page
+
+pages_list:
+  Blog: 'latest-post'
+  Project: 'project'
+  Timeline: 'timeline'
+  About: 'about'
+
+web-app-mode: True
+
+# Icons for Chrome Web App mode https://developer.chrome.com/multidevice/android/installtohomescreen
+icon-36p: "/img/web-app/icon-36p.png"
+icon-48p: "/img/web-app/icon-48p.png"
+icon-72p: "/img/web-app/icon-72p.png"
+icon-96p: "/img/web-app/icon-96p.png"
+icon-144p: "/img/web-app/icon-144p.png"
+icon-192p: "/img/web-app/icon-192p.png"
+
+#############
+# HTML Head #
+#############
+
+author: "Yi Du"
+lang: "en"
+title: "Another Peak"
+short-title: "AP"
+favicon: "/img/snowvolcano.jpg"
+description: "Official Website of Another Peak."
+keywords: "yi, du, technology, computer science, Machine Learning, Databases, jekyll"
+
+################
+# Intro layout #
+################
+
+black-favicon: ""
+background-img: "../img/IMG_1314.JPG"
+me-img: "/img/snowvolcano.jpg"
+
+##############################
+# Color the browser elements #
+##############################
+color-browser: "#000000"
+apple-status-bar-style: "black"
+
+##############################
+# Dynamic Text on the header #
+##############################
+
+dynamic-typing: True
+shuffle: True # Shuffle the lines.
+loop: True
+loop-count: 100 # Set False for infinite loop, or set any number for finite loop.
+type-speed: 2 # Default 10
+start-delay: 600 # Default 200
+delete-delay: 2000 # Default 5000
+lines: # You can add HTML Tags in the Text
+  - text: "Welcome to Another Peak"
+  - text: "A Place Yi Du Shares"
+
+########
+# Blog #
+########
+
+enable-gesture-navigation: True
+
+post-preview-words: 30
+
+paginate: 8
+
+email-share: True
+fb-share: True
+twitter-share: True
+linkedin-share: True
+reddit-share: False
+google-plus-share: True
+tumblr-share: False
+pinterest-share: False
+pocket-share: False
+vkontakte-share: False
+
+disqus-shortname: "anotherpeak"
+
+###############
+# Life Events #
+###############
+
+events:
+  - image: "/img/career/fhlmc.png"
+    date: "May 2013 - Today"
+    description: "Risk Analyst @ <a href=\"http://www.freddiemac.com/\" target=\"_blank\">Freddie Mac</a>, working @ Single Family - Modeling, Econometrics, Data Science and Analytics"
+  - image: "/img/career/ocwen.jpg"
+    date: "June 2011 - May 2013"
+    description: "Marketing Analyst @ <a href=\"http://www.ocwen.com/\" target=\"_blank\">Ocwen Financial Corporation</a>, worked @ the  Marketing Analytics"
+  - image: "/img/career/mizzou.jpg"
+    date: "August 2008 - May 2011"
+    description: "Master studies @ <a href=\"https://economics.missouri.edu/\" target=\"_blank\">Department of Economics, University of Missouri</a> on Economics"
+  
+
+# First image of the Career timeline
+timeline-img: "/img/career/wuxi.jpg"
+
+##################
+# Contact layout #
+##################
+
+email: "abraham.du@gmail.com"
+
+################
+# Author Blurb #
+################
+
+# The author blurb goes underneath blog posts.
+# This works best when your author blurb image has a transparent background, or matches your site background color.
+
+# if the author_blurb is not set, then this feature is skipped
+author_blurb: "Another Peak is the website for Yi Du to share tips, technique skills and ideas in the area of econometrics, statistics, modeling, machine learning and web development."
+author_blurb_image: ""
+
+##################
+# Social Buttons #
+##################
+
+social:
+  - title: "envelope"
+    url: "abraham.du@gmail.com"
+  - title: "github"
+    url: "https://github.com/abrahamdu"
+  - title: "linkedin"
+    url: "https://www.linkedin.com/in/duyi1"
+  - title: "twitter"
+    url: "https://twitter.com/yi_du_"
+  - title: "rss"
+    url: "/feed.xml"
+
+############
+# 404 page #
+############
+
+404-img: "/img/labtocat.png"
+
+################################################################################
+
+# Tread carefully if you want to change the variables bellow this point!
+
+# Pagination path
+paginate_path: "blog/page:num"
+
+# Enable minification SASS
+sass:
+  style: compressed
+  #sass_dir: css/_sass
+  
+# Exclusion list from the generated _site
+exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "scripts"]
+
+gems:
+  - jekyll-paginate
+  - jemoji
