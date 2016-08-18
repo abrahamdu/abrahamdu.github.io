@@ -1,7 +1,7 @@
 
 # Site settings
 
-url: "https://anotherpeak.org/"
+url: "anotherpeak.org/"
 baseurl: ""
 force-https: True
 syntax-highlight: True
