@@ -1,0 +1,14 @@
+
+<!-- Social Buttons Start -->
+
+<ul class="list-inline social-buttons">
+  {% for network in site.social %}
+    {% if network.title == "envelope" %}
+    <li><a href="mailto: {{ network.url }}"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+    {% else %}
+    <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<!-- Social Buttons End -->

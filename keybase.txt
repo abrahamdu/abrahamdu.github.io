@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/panoss
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://panossakkos.github.io
+  * I am panoss (https://keybase.io/panoss) on keybase.
+  * I have a public key with fingerprint B71A B068 7320 1429 1F44  7537 2C12 275F 8357 F72C
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01015cb85578ec99acde5398f69e592aeadebaa189f11e08d492d5b32180aadf90380a",
+            "fingerprint": "b71ab068732014291f4475372c12275f8357f72c",
+            "host": "keybase.io",
+            "key_id": "2c12275f8357f72c",
+            "kid": "01015cb85578ec99acde5398f69e592aeadebaa189f11e08d492d5b32180aadf90380a",
+            "uid": "f30ce66cbbc425f16b704473a4ddfe19",
+            "username": "panoss"
+        },
+        "service": {
+            "hostname": "panossakkos.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1469285388,
+    "expire_in": 157680000,
+    "prev": "d94d1c3915b6aa36e4b9898bb9ea2160e7df73c1b29c189c15b69366fd1ec9cf",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - https://gpgtools.org
+
+owGtUn1MVWUcvoBCgiCGwAxichQYeMXz/XFNadMiQltpAcr0cD7eczl83HM95wBe
+iYJCyKDbFWkNtSDLkaFzachuraGOr0BiNShAsZhmXmI6Ya0Ch51D9Udbf/b+876/
+3/s8z/v8nr2e0ABLsJ/10ST29ezfrH4DPt6SfbR6RTnEK6ILspVDhWBxA0Ui0HS2
+UBYhGwQjMEIIPE0QFA0EhuEEERAYQ0skAwgG5QAnAp7jEJqREATAtIgzqEjwGIrQ
+MMeJEgNjxgGyQpLssAPVqcoO3ZDlKYTjYZKmMBRGcJRBJBynCIxCBQRFKUKiMYKS
+jMog5iuayTDM8ZwGUmXF6BkFu2jvP/D/s++SRTkJgwVAkgLPCzhKSAjJU7DhGONw
+UZQAwphADagOrhgYaCfnUDQNqrBCRq9UFoAZqznHv+65wkJFS7XLen4J/9dYTlXR
+FUEpMiD5uu7UbKaE7nKanDLAs3+rsbzsEI04DUYpUDVZcUA2xEAKumzKIzjJoDSB
+0bQVAgecsgpY2UQQFEnDxjLfAaWGJCsyuIgIGIMQPMlxGAlwnqEZmucZwKEICQNK
+lChMQHiUEYykBBPHYCQpiYiRqSBB5oD7HQpkww2fnN3Q1GS7g9NLVABVBB/2j11i
+8Qu2BC71Nz+aJXhZ+D+/b0/cioWEiILC7Ln1ofFJ7/EvhXgbG4bQmaT03weKakLy
+7Oc32k4O5K19bFKKbYl25QbpVV1iozY592ky2fft9r1C+48jZ0q8LzdH+NLrz66c
+nvY1PeXqafAWFERlzeZ8uQDKR9P0q4PPJr7TuGuH22/J4y8+w65vw3PvRFyHwss8
+uzOP7ZiQ1s7G/oS15OgXBNvBc/CwPdqtlDbNpeeOzzxyY1iyuW9WVh1eSDj5MXYP
+PXGoN6jhBc2/9ld7wSfzdVfGym4nnymbC19z24MsT8mcjw8cnla2hoa4D/WP/dC8
+ccvppq32524WPzhVfxkf8bbWKnrHdF9G9+C6mNk9MYnqqZT4a/vuop1HKumrt/qG
+UioPcEl1vi/Qkc7dHxSv/rzircCA5m/W1aW17PXGT/l65sP+cGfNwjPDM9lxK1+7
+FJW40HXts9xLDlXoUdlJVS3aMGIh2ItvDtV8HZ4+2DZ24gnrlle6KNexdzsqd26f
+quj/btnCVM3q2u+jnm6jNkwcf7UXfuPersub8tqTL1x8u1pwfRWZeX/03CB8P0T5
+MEPbfOT8tuDipX0Rt64/9FRHtQdOHPdmPH8a7dx5xRoUNtrafzToxgPPpjV3c9NS
+9z+MCTjYCfItm5veH0940q8jqpttrerO+ujn5WFDdUHVzfV3Gn+pahgPK4lcxU/E
+rYouiOw968yJC+T2/Qk=
+=CZVg
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/panoss
+
+==================================================================

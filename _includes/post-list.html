@@ -1,0 +1,38 @@
+
+<!-- Post List Start -->
+
+<h1 align="left">
+  <a href="{{site.baseurl}}{{post.url}}">
+    <strong>{{ post.title }}</strong>
+  </a>
+</h1>
+<h4 class="date">
+            <strong>Written on {{ post.date | date: '%B %d, %Y' }}</strong>,
+            <strong>Modified on {{ post.modifiedOn | date: '%B %d, %Y' }}</strong> |
+            <a href="{{site.baseurl}}{{post.url }}#disqus_thread">Comments</a>
+</h4>
+<h4>
+    <small>
+              category:
+              <a class="category" href="{{site.baseurl}}/blog/categories/{{post.category | downcase}}.html">
+                {{ post.category }}
+              </a>
+              <br />
+              {% for tag in post.tags %}
+                <a class="tag" href="{{site.baseurl}}/blog/tags/{{tag}}.html">#{{ tag }}</a>
+              {% endfor %}          
+            </small>
+</h4>
+
+{{ post.content | strip_html | markdownify | truncatewords: site.post-preview-words }}
+
+<br />
+
+<a href="{{site.baseurl}}{{post.url}}">CONTINUE READING ...</a>
+
+<br class="visible-xs-block">
+  
+  <br class="visible-xs-block">
+  
+
+<!-- Post List End -->
