@@ -335,6 +335,18 @@ bad_unse <- jsonlite::unserializeJSON(eg1)
 ## Error in switch(encoding.mode, `NULL` = NULL, environment = new.env(parent = emptyenv()),  : 
 ##  EXPR must be a length 1 vector
 ```  
+
+(3c). _stream_in_ and _stream_out_ - Streaming [JSON] [1] input and output  
+
+As I mentioned before, [JSON] [1] file could carry huge amount of data from web and it becomes one of its advantages. However, since [R] [0] stores and processes all data in the memory, the power of [JSON] [1] is bounded by the limit of specific [R] [0] machines. In order to address this bottleneck, _jsonlite_ package implements these two functions to process data over a http(s) connection, a pipe, even from a NoSQL database. However different from _fromJSON_ and _toJSON_, the streaming requires the [ndjson](http://ndjson.org/).   
+  
+```r  
+
+```  
+
+Besides the functionality of reading and writing data between [JSON] [1] and [R] [0] provided by all of these three packages, they all provide some other  different functions in each of them. For example, _jsonlite_ provides _base64_dec_ and _base64_enc_ to convert between raw vectors to text while the other two packages don't have this function. Validating strings in [JSON] [1] format is provided by _RJSONIO_ (_isJSONValid_ function) and _jsonlite_ (_validate_) while _rjson_ doesn't have. _jsonlite_ also provides the capability of re-formatting [JSON] [1] file into: 1). structure with indentation added from _prettify_, 2). file by removing all unnecessary indentation and white spaces which is actually adopted by a lot of JavaScript libraries.
+
+
 <br />
 
 <u>Reference:</u>  
