@@ -16,7 +16,7 @@ kramdown:
 
 pages_list:
   Blog: 'latest-post'
-  Project: 'project'
+  Project: 'project-list'
   Timeline: 'timeline'
   About: 'about'
 
@@ -79,7 +79,7 @@ enable-gesture-navigation: True
 
 post-preview-words: 30
 
-paginate: 8
+paginate: 5
 
 email-share: True
 fb-share: True

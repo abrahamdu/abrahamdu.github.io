@@ -41,10 +41,17 @@
                 <a class="page-scroll" href="#page"> {{p[0]}} </a>
               {% else %}
                 <a href="{{site.baseurl}}/blog/"> {{p[0]}} </a>
+              {% endif %}           
+            {% elsif p[1] == "project-list" %}
+              {% if page.url == "/project/index.html" | prepend: {{site.baseurl}} %}
+                <a class="page-scroll" href="#page"> {{p[0]}} </a>
+              {% else %}
+                <a href="{{site.baseurl}}/project/"> {{p[0]}} </a>
               {% endif %}
             {% else %}
                 <a href="{{site.baseurl}}/#{{ p[1] }}"> {{p[0]}} </a>
             {% endif %}
+            
             </li>
           {% endfor %}
         {% endif %}
