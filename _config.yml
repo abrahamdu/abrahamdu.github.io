@@ -170,3 +170,4 @@ exclude: ["Rakefile", "LICENSE", "readme.markdown", "vendor", "scripts"]
 gems:
   - jekyll-paginate
   - jemoji
+  - jekyll-sitemap
