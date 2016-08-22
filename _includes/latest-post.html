@@ -10,9 +10,9 @@
         {% assign post = site.posts.first %}
         <h1> <strong> <a href="{{site.baseurl}}{{ post.url }}">{{post.title}} </a> </strong> </h1>
         <h4 class="date">
-            <strong>Written on {{ post.date | date: '%B %d, %Y' }}</strong>,
-            <strong>Modified on {{ post.modifiedOn | date: '%B %d, %Y' }}</strong> |
-            <a href="{{site.baseurl}}{{post.url }}#disqus_thread">Comments</a>
+            <strong><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</strong>
+            <strong><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> {{ post.modifiedOn | date: '%B %d, %Y' }}</strong> |
+            <a href="{{site.baseurl}}{{post.url }}#disqus_thread"><i class="fa fa-comments-o" aria-hidden="true"></i>Comments</a>
         </h4>
           <h4>
             <small>
@@ -22,14 +22,14 @@
               </a>
               <br />
               {% for tag in post.tags %}
-                <a class="tag" href="{{site.baseurl}}/blog/tags/{{tag}}.html">#{{ tag }}</a>
+                <a class="tag" href="{{site.baseurl}}/blog/tags/{{tag}}.html"><i class="fa fa-tag" aria-hidden="true"></i>{{ tag }}</a>
               {% endfor %}          
             </small>
           </h4>
 
         {{ post.content | strip_html | markdownify | truncatewords: site.post-preview-words }}
         <br />
-        <a href="{{site.baseurl}}{{post.url}}">CONTINUE READING ...</a>
+        <a href="{{site.baseurl}}{{post.url}}"><i class="fa fa-hand-o-right" aria-hidden="true"></i> CONTINUE READING ...</a>
 
         <h4><a href="{{site.baseurl}}/blog/">More Blogs</a></h4>
 
