@@ -19,9 +19,9 @@
 
           <h1><strong>{{ page.title }}</strong></h1>
           <h4 class="date">
-            <strong>Written on {{ page.date | date: '%B %d, %Y' }}</strong>,
-            <strong>Modified on {{ page.modifiedOn | date: '%B %d, %Y' }}</strong> |
-            <a href="{{site.baseurl}}{{page.url }}#disqus_thread">Comments</a>
+            <strong><i class="fa fa-calendar" aria-hidden="true"></i> {{ page.date | date: '%B %d, %Y' }}</strong>,
+            <strong><i class="fa fa-calendar-plus-o" aria-hidden="true"></i> {{ page.modifiedOn | date: '%B %d, %Y' }}</strong> |
+            <a href="{{site.baseurl}}{{page.url }}#disqus_thread"><i class="fa fa-comments-o" aria-hidden="true"></i>Comments</a>
           </h4>
           <h4>
             <small>
@@ -31,7 +31,7 @@
               </a>
               <br />
               {% for tag in page.tags %}
-                <a class="tag" href="{{site.baseurl}}/blog/tags/{{tag}}.html">#{{ tag }}</a>
+                <a class="tag" href="{{site.baseurl}}/blog/tags/{{tag}}.html"><i class="fa fa-tag" aria-hidden="true"></i>{{ tag }}</a>
               {% endfor %}          
             </small>
           </h4>
