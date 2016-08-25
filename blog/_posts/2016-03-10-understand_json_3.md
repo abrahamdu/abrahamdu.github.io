@@ -341,7 +341,29 @@ bad_unse <- jsonlite::unserializeJSON(eg1)
 As I mentioned before, [JSON] [1] file could carry huge amount of data from web and it becomes one of its advantages. However, since [R] [0] stores and processes all data in the memory, the power of [JSON] [1] is bounded by the limit of specific [R] [0] machines. In order to address this bottleneck, _jsonlite_ package implements these two functions to process data over a http(s) connection, a pipe, even from a NoSQL database. However different from _fromJSON_ and _toJSON_, the streaming requires the [ndjson](http://ndjson.org/) format.   
   
 ```r  
+library(MASS)
+stream_out(cats, stdout())
+## {"Sex":"F","Bwt":2,"Hwt":7}
+## {"Sex":"F","Bwt":2,"Hwt":7.4}
+## {"Sex":"F","Bwt":2,"Hwt":9.5}
+## {"Sex":"F","Bwt":2.1,"Hwt":7.2}
+## {"Sex":"F","Bwt":2.1,"Hwt":7.3}
+## ...
 
+library(curl)
+con <- curl("https://jeroenooms.github.io/data/diamonds.json")
+mydata <- stream_in(con, pagesize = 1000)
+## opening curl input connection.
+## Imported 53940 records. Simplifying into dataframe...
+## closing curl input connection.
+
+head(mydata)
+##   carat       cut color clarity depth table price    x    y    z
+## 1  0.23     Ideal     E     SI2  61.5    55   326 3.95 3.98 2.43
+## 2  0.21   Premium     E     SI1  59.8    61   326 3.89 3.84 2.31
+## 3  0.23      Good     E     VS1  56.9    65   327 4.05 4.07 2.31
+## 4  0.29   Premium     I     VS2  62.4    58   334 4.20 4.23 2.63
+## 5  0.31      Good     J     SI2  63.3    58   335 4.34 4.35 2.75
 ```  
 
 Besides the functionality of reading and writing data between [JSON] [1] and [R] [0] provided by all of these three packages, they all provide some other  different functions in each of them. For example, _jsonlite_ provides _base64_dec_ and _base64_enc_ to convert between raw vectors to text while the other two packages don't have this function. Validating strings in [JSON] [1] format is provided by _RJSONIO_ (_isJSONValid_ function) and _jsonlite_ (_validate_) while _rjson_ doesn't have. _jsonlite_ also provides the capability of re-formatting [JSON] [1] file into: 1). structure with indentation added from _prettify_, 2). file by removing all unnecessary indentation and white spaces which is actually adopted by a lot of JavaScript libraries. In terms of parsing results, [This paper](https://rstudio-pubs-static.s3.amazonaws.com/31702_9c22e3d1a0c44968a4a1f9656f1800ab.html) gives readers a brief comparison between three packages which is also worthy reading it.
