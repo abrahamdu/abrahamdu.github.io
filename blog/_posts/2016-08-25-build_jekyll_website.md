@@ -6,7 +6,7 @@ category: TECH
 tags: [ 'jekyll', 'web' ]
 title: 'Build Jekyll Website from Scratch on Windows'
 date: 2016-08-25
-modifiedOn: 2016-08-25
+modifiedOn: 2016-08-29
 ---
 
 When I decided to open my own website with some basic functions, such as blogging, hosting GitHub projects, [Jekyll] [1] comes as a natural choice to serve as a static site generator with GitHub pages. However, the sad thing is that I didn't have any knowledge of web development, hosting that time and my first [Jekyll] [1] effort is basically a fork of GitHub project _[Jekyll Now](https://github.com/barryclark/jekyll-now)_. But working on a project in GitHub directly lacks testing, control and monitoring which pushes me further to dig into [Jekyll] [1].  
@@ -99,6 +99,8 @@ You will see [Jekyll] [1] has been installed into my local machine with its depe
 
 Since I will create my site with [Jekyll] [1] as the engine and host it on [GitHub Pages] [2], it is good to know which versions of [Jekyll] [1] and its dependencies are supported by [GitHub Pages] [2]. Here is the [link](https://pages.github.com/versions/). 
 
+__4. Create First [Jekyll] [1] Site__   
+------------------------------------------------------- 
 After all the steps above are successfully completed, we can create a simple [Jekyll] [1] by running the following command:  
 
 ```ruby  
@@ -134,6 +136,17 @@ Now, our first [Jekyll] [1] site is up and running in my local machine:
 
 ![alt text](/img/blog/jekyll2.png)  
 
+__5. Include Project into [GitHub Pages] [2]__   
+-------------------------------------------------------  
+Sometimes, people will use GitHub to manage projects by different repositories. And if you want to include each individual project into your [GitHub Pages] [2], you can simply change your __config.yml_ of _baseurl_ and _url_ as follows:  
+
+```ruby
+baseurl: "/test" # the subpath of your site, e.g. /blog
+url: "http://anotherpeak.org/"
+```
+In this case, I put the test site create in **step 4** under my [GitHub Pages] [2]: [http://anotherpeak.org/test/](http://anotherpeak.org/test/).  
+
+<br />  
 
 <u>Reference:</u>  
 -----------------
