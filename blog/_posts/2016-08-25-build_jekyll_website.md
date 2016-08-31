@@ -152,7 +152,7 @@ In this case, I put the test site create in **step 4** under my [GitHub Pages] [
 -----------------
 (1). Jekyll official website, _[https://jekyllrb.com/](https://jekyllrb.com/)_.  
 (2). GitHub Pages official website, _[https://pages.github.com/](https://pages.github.com/)_.  
-(3). Run Jekyll on Windows, _[http://jekyll-windows.juthilo.com/](http://jekyll-windows.juthilo.com/)_.
+(3). Run Jekyll on Windows, _[http://jekyll-windows.juthilo.com/](http://jekyll-windows.juthilo.com/)_.  
 (4). Jekyll on Windows, _[https://jekyllrb.com/docs/windows/](https://jekyllrb.com/docs/windows/)_.
 
 
