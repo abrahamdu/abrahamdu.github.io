@@ -50,6 +50,8 @@ black-favicon: ""
 background-img: "../img/frontpage.jpg"
 me-img: "/img/snowvolcano.jpg"
 
+blog-img: "../img/blog/wordcloud.png"
+
 ##############################
 # Color the browser elements #
 ##############################
