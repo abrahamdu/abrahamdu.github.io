@@ -6,7 +6,7 @@ category: BigData
 tags: [ 'bigdata' ]
 title: 'Big Data Terminology'
 date: 2016-09-12
-modifiedOn: 2016-09-12
+modifiedOn: 2016-09-18
 ---
 
 __Accumulo__ - A computer software project that developed a sorted, distributed key/value store based on the BigTable technology from Google. It is a system built on top of Apache Hadoop, Apache ZooKeeper, and Apache Thrift. Written in Java, Accumulo has cell-level access labels and server-side programming mechanisms.   
@@ -22,6 +22,8 @@ __Avro__ - A remote procedure call and data serialization framework developed wi
 __AWS__ - Amazon Web Services, a suite of cloud-computing services that make up an on-demand computing platform.  
 
 __Cassandra__ - A free and open-source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. It offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients.  
+
+__Drill__ - An open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets. It supports a variety of NoSQL databases and file systems, including HBase, MongoDB, MapR-DB, HDFS, MapR-FS, Amazon S3, Azure Blob Storage, Google Cloud Storage, Swift, NAS and local files. A single query can join data from multiple datastores.    
 
 __Flink__ - An open source platform for distributed stream and batch data processing. The core of it is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams.    
 
