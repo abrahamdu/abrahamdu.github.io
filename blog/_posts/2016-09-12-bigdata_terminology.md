@@ -23,6 +23,8 @@ __AWS__ - Amazon Web Services, a suite of cloud-computing services that make up 
 
 __Cassandra__ - A free and open-source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. It offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients.  
 
+__Chukwa__ - An open source data collection system for monitoring large distributed systems. Chukwa is built on top of the Hadoop Distributed File System (HDFS) and Map/Reduce framework and inherits Hadoop’s scalability and robustness. Chukwa also includes a ﬂexible and powerful toolkit for displaying, monitoring and analyzing results to make the best use of the collected data.  
+
 __Drill__ - An open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets. It supports a variety of NoSQL databases and file systems, including HBase, MongoDB, MapR-DB, HDFS, MapR-FS, Amazon S3, Azure Blob Storage, Google Cloud Storage, Swift, NAS and local files. A single query can join data from multiple datastores.    
 
 __Flink__ - An open source platform for distributed stream and batch data processing. The core of it is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams.    
@@ -39,12 +41,16 @@ __Hive__ - A data warehouse infrastructure built on top of Hadoop for providing 
 
 __Kafka__ - A distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system.  
 
+__Mahout__ - A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms focused primarily in the areas of collaborative filtering, clustering and classification.   
+
 __MapReduce__ - A programming model and an associated implementation for processing and generating large data sets with a parallel, distributed algorithm on a cluster.  
 
 __Mesos__ - It is built using the same principles as the Linux kernel, only at a different level of abstraction. The Mesos kernel runs on every machine and provides applications (e.g., Hadoop, Spark, Kafka, Elasticsearch) with API’s for
 resource management and scheduling across entire datacenter and cloud environments.  
 
 __MongoDB__ - A cross-platform, open-source database that uses a document-oriented data model, rather than a traditional table-based relational database structure. This type of database structure is designed to make the integration of structured and unstructured data in certain types of applications easier and faster.  
+
+__Oozie__ - A Java Web application used to schedule Apache Hadoop jobs. It is integrated with the rest of the Hadoop stack supporting several types of Hadoop jobs out of the box (such as Java map-reduce, Streaming map-reduce, Pig, Hive, Sqoop and Distcp) as well as system specific jobs (such as Java programs and shell scripts).    
 
 __Pig__ - A platform for analyzing large data sets that consists of a high-level language for expressing data analysis programs, coupled with infrastructure for evaluating these programs. The salient property of Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to handle very large data sets.  
 
@@ -53,6 +59,8 @@ __Redis__ - An open source (BSD licensed), in-memory data structure store, used 
 __REST__ - REpresentational State Transfer, an architectural style, and an approach to communications that is often used in the development of Web services.      
 
 __Spark__ - A fast, in-memory data processing engine with elegant and expressive development APIs to allow data workers to efficiently execute streaming, machine learning or SQL workloads that require fast iterative access to datasets.     
+
+__Sqoop__ - A tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases.  
 
 __Storm__ - A distributed real-time computation system for processing large volumes of high-velocity data. It is extremely fast, with the ability to process over a million records per second per node on a cluster of modest size.  
 
