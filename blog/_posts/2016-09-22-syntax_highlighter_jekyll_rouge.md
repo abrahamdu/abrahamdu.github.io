@@ -6,7 +6,7 @@ category: TECH
 tags: [ 'jekyll', 'web', 'css' ]
 title: 'Syntax Highlighter of Jekyll with Rouge'
 date: 2016-09-22
-modifiedOn: 2016-09-22
+modifiedOn: 2016-09-24
 ---
 
 On Feb 1, 2016, GitHub Pages announced to only support [Rouge] [2] for syntax highlighting (see [announcement](https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0)). This means you don't have to install __Python__ in order for *Pygments* to highlight syntax. 
@@ -69,6 +69,9 @@ And I include this generated CSS file into markdown file:
 
 Now we can see the corresponding languages are highlighted by [Rouge] [2] [here](http://anotherpeak.org/test/jekyll/update/2016/08/27/welcome-to-jekyll.html).  
 
+Using [Rouge] [2] is one way for syntax highlighting. It comes together with [Jekyll] [1] as __Ruby_ gems and get supported by GitHub Pages. People also use other tools to do syntax highlight. My personal website actually use [highlight.js](https://highlightjs.org/) to implement syntax highlight and you will get more languages support and more themem styles although the usage is quite simple as well, embed its CSS file into your web page.  
+
+<br />
 
 [1]: https://jekyllrb.com/  "Jekyll"
 [2]: http://rouge.jneen.net/  "Rouge"
