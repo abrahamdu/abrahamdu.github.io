@@ -141,7 +141,7 @@ __5. Include Project into [GitHub Pages] [2]__
 Sometimes, people will use GitHub to manage projects by different repositories. And if you want to include each individual project into your [GitHub Pages] [2], you can simply change your __config.yml_ of _baseurl_ and _url_ as follows:  
 
 ```ruby
-baseurl: "/test" # the subpath of your site, e.g. /blog
+baseurl: "test" # the subpath of your site, e.g. /blog
 url: "http://anotherpeak.org/"
 ```
 In this case, I put the test site create in **step 4** under my [GitHub Pages] [2]: [http://anotherpeak.org/test/](http://anotherpeak.org/test/).  
