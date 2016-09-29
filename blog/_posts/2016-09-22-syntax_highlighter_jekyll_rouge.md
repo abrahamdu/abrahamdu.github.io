@@ -69,7 +69,7 @@ And I include this generated CSS file into markdown file:
 
 Now we can see the corresponding languages are highlighted by [Rouge] [2] [here](http://anotherpeak.org/test/jekyll/update/2016/08/27/welcome-to-jekyll.html).  
 
-Using [Rouge] [2] is one way for syntax highlighting. It comes together with [Jekyll] [1] as __Ruby_ gems and get supported by GitHub Pages. People also use other tools to do syntax highlight. My personal website actually use [highlight.js](https://highlightjs.org/) to implement syntax highlight and you will get more languages support and more themem styles although the usage is quite simple as well, embed its CSS file into your web page.  
+Using [Rouge] [2] is one way for syntax highlighting. It comes together with [Jekyll] [1] as __Ruby__ gems and get supported by GitHub Pages. People also use other tools to do syntax highlight. My personal website actually use [highlight.js](https://highlightjs.org/) to implement syntax highlight and you will get more languages support and more themem styles although the usage is quite simple as well, embed its CSS file into your web page.  
 
 <br />
 
