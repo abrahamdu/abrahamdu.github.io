@@ -17,7 +17,7 @@ kramdown:
 pages_list:
   Blog: 'latest-post'
   Project: 'project-list'
-  Timeline: 'timeline'
+  #Timeline: 'timeline'
   About: 'about'
 
 web-app-mode: True
@@ -175,3 +175,4 @@ gems:
   - jekyll-paginate
   - jemoji
   - jekyll-sitemap
+  
