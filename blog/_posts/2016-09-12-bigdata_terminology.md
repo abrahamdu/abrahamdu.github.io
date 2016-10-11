@@ -6,7 +6,7 @@ category: BigData
 tags: [ 'bigdata' ]
 title: 'Big Data Terminology'
 date: 2016-09-12
-modifiedOn: 2016-10-06
+modifiedOn: 2016-10-10
 ---
 
 __Accumulo__ - A computer software project that developed a sorted, distributed key/value store based on the BigTable technology from Google. It is a system built on top of Apache Hadoop, Apache ZooKeeper, and Apache Thrift. Written in Java, Accumulo has cell-level access labels and server-side programming mechanisms.   
@@ -25,6 +25,8 @@ __Cassandra__ - A free and open-source distributed database management system de
 
 __Chukwa__ - An open source data collection system for monitoring large distributed systems. Chukwa is built on top of the Hadoop Distributed File System (HDFS) and Map/Reduce framework and inherits Hadoop’s scalability and robustness. Chukwa also includes a ﬂexible and powerful toolkit for displaying, monitoring and analyzing results to make the best use of the collected data.  
 
+__DAG__ - Directed Acyclic Graph. When a SparkContext is created, it is submitted to DAGScheduler. A stage is comprised of tasks based on partitions of the input data. The DAG scheduler pipelines operators together. The Stages are passed on to the Task Scheduler. The task scheduler launches tasks via cluster manager. And finally the Worker executes the tasks on the Slave.  
+
 __Drill__ - An open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets. It supports a variety of NoSQL databases and file systems, including HBase, MongoDB, MapR-DB, HDFS, MapR-FS, Amazon S3, Azure Blob Storage, Google Cloud Storage, Swift, NAS and local files. A single query can join data from multiple datastores.    
 
 __Flink__ - An open source platform for distributed stream and batch data processing. The core of it is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams.    
@@ -40,6 +42,8 @@ __HDFS__ - A Java-based file system that provides scalable and reliable data sto
 __Hive__ - A data warehouse infrastructure built on top of Hadoop for providing data summarization, query, and analysis. It gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop.  
 
 __Kafka__ - A distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system.  
+
+__Lambda Architecture__ - A data-processing architecture designed to handle massive quantities of data by taking advantage of both batch- and stream-processing methods. This approach to architecture attempts to balance latency, throughput, and fault-tolerance by using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data.  
 
 __Mahout__ - A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms focused primarily in the areas of collaborative filtering, clustering and classification.   
 
