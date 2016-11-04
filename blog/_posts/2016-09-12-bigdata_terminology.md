@@ -6,7 +6,7 @@ category: BigData
 tags: [ 'bigdata' ]
 title: 'Big Data Terminology'
 date: 2016-09-12
-modifiedOn: 2016-10-10
+modifiedOn: 2016-11-03
 ---
 
 __Accumulo__ - A computer software project that developed a sorted, distributed key/value store based on the BigTable technology from Google. It is a system built on top of Apache Hadoop, Apache ZooKeeper, and Apache Thrift. Written in Java, Accumulo has cell-level access labels and server-side programming mechanisms.   
@@ -64,7 +64,9 @@ __Redis__ - An open source (BSD licensed), in-memory data structure store, used 
 
 __REST__ - REpresentational State Transfer, an architectural style, and an approach to communications that is often used in the development of Web services.  
 
-__Shark__ - Also known as SQL on Spark, is a large-scale data warehouse system for Spark designed to be compatible with Apache Hive. Shark supports Hive's query language, metastore, serialization formats, and user-defined functions, providing seamless integration with existing Hive deployments and a familiar, more powerful option for new ones. It has been subsumed by Spark SQL.       
+__Shark__ - Also known as SQL on Spark, is a large-scale data warehouse system for Spark designed to be compatible with Apache Hive. Shark supports Hive's query language, metastore, serialization formats, and user-defined functions, providing seamless integration with existing Hive deployments and a familiar, more powerful option for new ones. It has been subsumed by Spark SQL.     
+
+__Solr__ - A highly reliable, scalable and fault tolerant, providing distributed indexing, replication and load-balanced querying, automated failover and recovery, centralized configuration and more.    
 
 __Spark__ - A fast, in-memory data processing engine with elegant and expressive development APIs to allow data workers to efficiently execute streaming, machine learning or SQL workloads that require fast iterative access to datasets.     
 
