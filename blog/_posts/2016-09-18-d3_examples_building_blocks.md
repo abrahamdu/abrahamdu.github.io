@@ -317,28 +317,6 @@ __5. Browser Support__
 
 Finally, we need a browser to present our [D3] [1] project. According to [D3] [1] [wiki](https://github.com/d3/d3/wiki), majority 'modern' browsers support [D3] [1] except IE8 and older versions.  
 
-__6. A Template for D3__  
-----------------------  
-
-From the above examples and brief introduction to HTML/CSS/JavaScript, I want to set up a template for [D3] [1] in order to illustrate how to apply it into different charts in the following blogs. Also, this template is based on [D3] [1] version 4.0 and above.  
-
-```javascript 
-<!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-
-<\style>
-<body>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-
-</script>
-</body>
-</html>
-<body>
-
-</body>
-```  
 
 Let's start our [D3] [1] journey!
 
