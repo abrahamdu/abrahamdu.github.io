@@ -6,7 +6,7 @@ category: BigData
 tags: [ 'bigdata' ]
 title: 'Big Data Terminology'
 date: 2016-09-12
-modifiedOn: 2016-11-03
+modifiedOn: 2017-04-29
 ---
 
 __Accumulo__ - A computer software project that developed a sorted, distributed key/value store based on the BigTable technology from Google. It is a system built on top of Apache Hadoop, Apache ZooKeeper, and Apache Thrift. Written in Java, Accumulo has cell-level access labels and server-side programming mechanisms.   
@@ -73,6 +73,8 @@ __Spark__ - A fast, in-memory data processing engine with elegant and expressive
 __Sqoop__ - A tool designed for efficiently transferring bulk data between Apache Hadoop and structured datastores such as relational databases.  
 
 __Storm__ - A distributed real-time computation system for processing large volumes of high-velocity data. It is extremely fast, with the ability to process over a million records per second per node on a cluster of modest size.  
+
+__TensorFlow__ - An open source software library for numerical computation using data flow graphs. Nodes in the graph represent mathematical operations, while the graph edges represent the multidimensional data arrays (tensors) that flow between them. This flexible architecture lets you deploy computation to one or more CPUs or GPUs in a desktop, server, or mobile device without rewriting code. TensorFlow also includes TensorBoard, a data visualization toolkit. It was originally developed and maintained by Google.  
 
 __Tez__ - An extensible framework for building high performance batch and interactive data processing applications, coordinated by YARN in Apache Hadoop. It improves the MapReduce paradigm by dramatically improving its speed, while maintaining MapReduce’s ability to scale to petabytes of data.  
 
