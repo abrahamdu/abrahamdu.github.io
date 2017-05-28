@@ -40,7 +40,7 @@ title: "Another Peak"
 short-title: "AP"
 favicon: "/img/snowvolcano.jpg"
 description: "Official Website of Another Peak."
-keywords: "yi, du, technology, computer science, Machine Learning, Databases, jekyll"
+keywords: "yi, du, technology, computer science, Machine Learning, Databases, data visualization, jekyll"
 
 ################
 # Intro layout #
@@ -71,7 +71,7 @@ start-delay: 600 # Default 200
 delete-delay: 2000 # Default 5000
 lines: # You can add HTML Tags in the Text
   - text: "Welcome to Another Peak"
-  - text: "A Place Yi Du Shares"
+  - text: "where Yi Du Shares Tips in Data Visualization, Programming, and Machine Learning"
 
 ########
 # Blog #
