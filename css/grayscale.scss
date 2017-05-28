@@ -155,6 +155,24 @@ a {
     }
 }
 
+/*For search button*/
+#search-nav input, #search-nav button[type="reset"] {
+  display: none; }
+
+#search-nav input, #search-nav button {
+  border-radius: 0px;
+  border-width: 0px;
+  color: #454545;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  outline: none; }
+
+#search-nav .search-submit {
+  position: relative;
+  bottom: 2px; }
+/*End search button*/
+
 .intro {
     display: table;
     width: 100%;
@@ -229,6 +247,90 @@ a {
         height: 100%;
         padding: 0;
         .blog-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+.search {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: $intro-text-color;
+    {% if site.search-img %}
+    background: url({{ site.search-img }}) no-repeat top center scroll;
+    {% endif %}
+    background-color: $header-background-color;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    .search-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text {
+            font-size: 18px;
+            @if $navbar-text-shadow {
+                text-shadow: 1px 0 1px #000;
+            }
+        }
+    }
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .search-body {
+            .brand-heading {
+                font-size: 100px;
+            }
+            .intro-text {
+                font-size: 26px;
+            }
+        }
+    }
+}
+
+.error {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: $intro-text-color;
+    {% if site.error-img %}
+    background: url({{ site.error-img }}) no-repeat top center scroll;
+    {% endif %}
+    background-color: $header-background-color;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    .error-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text {
+            font-size: 18px;
+            @if $navbar-text-shadow {
+                text-shadow: 1px 0 1px #000;
+            }
+        }
+    }
+    @media(min-width:768px) {
+        height: 100%;
+        padding: 0;
+        .error-body {
             .brand-heading {
                 font-size: 100px;
             }
@@ -487,3 +589,4 @@ body {
 .fourofour {
   border: 1px solid $primary-color !important;
 }
+
