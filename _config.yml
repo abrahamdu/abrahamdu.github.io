@@ -51,6 +51,8 @@ background-img: "../img/frontpage.jpg"
 me-img: "/img/snowvolcano.jpg"
 
 blog-img: "../img/blog/wordcloud.png"
+search-img: "/img/search.jpg"
+error-img: "/img/404.png"
 
 ##############################
 # Color the browser elements #
@@ -119,6 +121,7 @@ timeline-img: "/img/career/wuxi.jpg"
 # Contact layout #
 ##################
 
+email: "admin@anotherpeak.org"
 email: "admin@anotherpeak.org"
 
 ################
