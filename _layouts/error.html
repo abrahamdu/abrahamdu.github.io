@@ -20,7 +20,9 @@
           <h1><strong>{{ page.title }}</strong></h1>
 
           {{ page.content | markdownify }}
-
+          
+          {% include pagination.html %}
+            
           <img class="img-responsive center-block fourofour" src="{{site.baseurl}}{{ site.404-img }}" alt="">
 
         </div>
