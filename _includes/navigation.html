@@ -55,10 +55,28 @@
             </li>
           {% endfor %}
         {% endif %}
-          <li><a href="#" data-ix="search-button" class="fa fa-search" aria-hidden="true"></a></li>
+          <!--  SEARCH -->
+          <li class="li-form">
+              <a>
+              <form role="search" id="search-nav" method="GET" action="{{ '/search' | prepend: site.baseurl }}">
+                 <input type="search" class="search-field" placeholder="What are you looking for?" value="" name="query" title="Rechercher :" style="color:black;background-color:white;">
+                  <button type="reset">
+                        <span class="fa fa-close" style="color:black;">
+                          <span class="sr-only">Close</span>
+                        </span>
+                    </button>
+                    <button type="submit" class="search-submit">
+                        <span class="fa fa-search" style="color:gold;">
+                          <span class="sr-only">Rechercher</span>
+                        </span>
+                    </button>
+              </form>
+              </a>
+          </li>
       </ul>
     </div>
   </div>
 </nav>
+
 
 <!-- Navigation End -->
