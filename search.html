@@ -1,0 +1,34 @@
+---
+layout: search
+title: Searching Another Peak...
+permalink: /search/
+---
+<p data-search-found>
+    <span data-search-found-count></span> result(s) found for &ldquo;<span data-search-found-term></span>&rdquo;.
+</p>
+<div id="search_results">
+</div>
+
+<script>
+	var JEKYLL_POSTS = [];
+	{% for post in site.posts %}
+	JEKYLL_POSTS.push({
+		title: "{{ post.title }}",
+		link: "{{ post.url | prepend: site.baseurl }}"
+	}); 
+    {% endfor %}
+    {% for post in site.pages %}
+	JEKYLL_POSTS.push({
+		title: "{{ page.title }}",
+		link: "{{ page.url | prepend: site.baseurl }}"
+	}); 
+    {% endfor %}
+</script>
+<script src="{{ "/js/search.js" | prepend: site.baseurl }}"></script>
+<script>
+	new jekyllSearch({
+		selector: "#search_results",
+		properties: ["title", "content"]
+	});
+</script>
+        
