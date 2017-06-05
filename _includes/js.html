@@ -9,6 +9,9 @@
 
 <!-- Plugin JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/0.7.1/lunr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.1.5/jekyll-search.min.js"></script>
+
 
 <!-- Custom Theme JavaScript -->
 <!--* Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -19,6 +22,57 @@ function toggleNavCollapse(){50<$(".navbar").offset().top?$(".navbar-fixed-top")
 $(document).ready(toggleNavCollapse);
 $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click",function(b){var a=$(this);$("html, body").stop().animate({scrollTop:$(a.attr("href")).offset().top-50},1500,"easeInOutExpo",function(){a.blur()});b.preventDefault()})});$(".navbar-collapse ul li a").click(function(){$(".navbar-toggle:visible").click()});
 </script>
+
+<!--  SEARCH Expand the search bar -->
+<script>
+      $(function(){
+
+      //nav affix
+      $('#BB-nav').affix({
+          offset: {
+              top: $('header').height()
+          }
+      });
+
+      //search form
+      //close on escape key
+      $(document).keyup(function(e) {
+          if(e.which === 27){
+              closeSearch();
+          }
+      });
+
+      function closeSearch() {
+          $('.search-field').val('');
+          $('.search-field').hide();
+          $('#search-nav').removeClass('active');
+          $('#search-nav button[type="reset"]').hide();
+      }
+
+      function openSearch() {
+          $('#search-nav').addClass('active');
+          $('.search-field').show();
+          $('#search-nav button[type="reset"]').show();
+      }
+
+      // Show Search if form is not active or input search empty
+      $('#search-nav button[type="submit"]').click(function(event) {
+          if(!$( "#search-nav" ).hasClass( "active" ) || $('.search-field').val() === '') {
+              event.preventDefault();
+              openSearch();
+          }
+      });
+
+      //close form
+      $('#search-nav button[type="reset"]').click(function(event) {
+          //event.preventDefault();
+          closeSearch();
+      });
+  });
+</script>
+<!-- Script pointing to search-script.js -->
+<!--script src="/js/jekyll-search.js" type="text/javascript"></script-->
+<!--script src="/js/search.js" type="text/javascript"></script-->
 
 {% if page.section-type == "index" %}
 
