@@ -1,0 +1,36 @@
+<!-- Search Layout Start -->
+
+<!DOCTYPE html>
+<html lang="{{ site.lang }}">
+    
+  {% include js.html %}
+  {% include head.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  data-offset="151">
+      
+    {% include navigation.html %}
+    {% include header_search.html %} 
+      
+    <section id="page" class="container content-section text-left">
+
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+
+        {% include swipe-instructions.html %}
+            
+        <h1><strong>{{ page.title }}</strong></h1>
+            
+        {{ page.content | markdownify }}
+
+        {% include pagination.html %}
+
+        </div>
+      </div>
+    </section>
+
+    {% include footer.html %}
+
+  </body>
+</html>
+
+<!-- Search Layout End -->
