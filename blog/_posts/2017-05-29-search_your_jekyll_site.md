@@ -154,5 +154,4 @@ For my following work for my search engine, I'd expand it to search the whole si
 (5). Simple Jekyll searching, _[https://alexpearce.me/2012/04/simple-jekyll-searching/](https://alexpearce.me/2012/04/simple-jekyll-searching/)_.  
 (6). lunr.js and Jekyll, _[http://katydecorah.com/code/lunr-and-jekyll/](http://katydecorah.com/code/lunr-and-jekyll/)_.  
 
-
 [1]: https://jekyllrb.com/  "Jekyll"
