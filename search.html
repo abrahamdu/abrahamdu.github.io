@@ -13,7 +13,7 @@ permalink: /search/
 <script>
 	var JEKYLL_POSTS = [];
     
-	{{% for post in site.posts %}}
+	{% for post in site.posts %}
 	JEKYLL_POSTS.push({
 		title: "{{ post.title }}",
 		link: "{{ post.url | prepend: site.baseurl }}"
