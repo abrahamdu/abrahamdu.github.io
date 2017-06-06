@@ -14,9 +14,9 @@ When I started to use [Panos Sakkos](https://panossakkos.github.io/)'s _[Jekyll 
 I start to do research by myself to see what's the best option to install a search function into my [own website](http://anotherpeak.org/). Eventually it turns out that I have three options: 1). Google Custom Search Engine; 2). [Lunr.js](https://lunrjs.com/); 3). [Simple Jekyll Search](https://christianfei.com/posts/Use-Simple-Jekyll-Search-on-your-blog-in-these-easy-steps/) by Christian Fei. The first option is definitely the easiest to implement and light but not instant yet. The second is instant search but heavy. [Katy DeCorah](http://katydecorah.com/) blogged to iterate how to include [Lunr.js](https://lunrjs.com/) into [Jekyll] [1] site and her final search implementation is quite neat (Please check [this link](http://katydecorah.com/search/)). The third option is actually both instant and light.
 
 After doing all these researches with an idea of how I would like my own search function works out in my site, I set the following rules to narrow down my choices:  
-1. Instant and Light  
-2. Full text client-side search engine  
-3. Popular web search engine alike  
+<li>1. Instant and Light</li>  
+<li>2. Full text client-side search engine</li>  
+<li>3. Popular web search engine alike</li>  
 
 These rules actually put myself into the spot to adopt [Simple Jekyll Search](https://christianfei.com/posts/Use-Simple-Jekyll-Search-on-your-blog-in-these-easy-steps/) as my selection. And I just need to read the documents of it and put my hands on to implement it. However, after long-search on the web, I suddely find [Ben Howdle](http://benhowdle.im/)'s [2014 blog](http://benhowdle.im/creating-a-dynamic-search-page-for-your-jekyll-blog.html) and [Mat Hayward](http://mathayward.com/)'s [2014 blog](http://mathayward.com/jekyll-search/) which both enlighten me. __This is the search option, I want!__   
 
