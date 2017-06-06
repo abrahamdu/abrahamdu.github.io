@@ -18,8 +18,9 @@ permalink: /search/
 		title: "{{ post.title }}",
 		link: "{{ post.url | prepend: site.baseurl }}"
 	}); 
-     {{% endfor %}}
-
+    {% endfor %}
+</script>
+<script>
 	new jekyllSearch({
 		selector: "#search_results",
 		properties: ["title", "content"]
