@@ -113,7 +113,7 @@
 		}
 
 		outputResults(this.results, this.el);
-
+        
 	};
 
 	window.jekyllSearch = Search;
