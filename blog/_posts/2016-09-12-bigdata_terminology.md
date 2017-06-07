@@ -6,7 +6,7 @@ category: BigData
 tags: [ 'bigdata' ]
 title: 'Big Data Terminology'
 date: 2016-09-12
-modifiedOn: 2017-04-29
+modifiedOn: 2017-06-06
 ---
 
 __Accumulo__ - A computer software project that developed a sorted, distributed key/value store based on the BigTable technology from Google. It is a system built on top of Apache Hadoop, Apache ZooKeeper, and Apache Thrift. Written in Java, Accumulo has cell-level access labels and server-side programming mechanisms.   
@@ -25,6 +25,8 @@ __Cassandra__ - A free and open-source distributed database management system de
 
 __Chukwa__ - An open source data collection system for monitoring large distributed systems. Chukwa is built on top of the Hadoop Distributed File System (HDFS) and Map/Reduce framework and inherits Hadoop’s scalability and robustness. Chukwa also includes a ﬂexible and powerful toolkit for displaying, monitoring and analyzing results to make the best use of the collected data.  
 
+__Cypher__ - A declarative, SQL-inspired language for describing patterns in graphs which allows us to state what we want to select, insert, update or delete from our graph data without requiring us to describe exactly how to do it.  
+
 __DAG__ - Directed Acyclic Graph. When a SparkContext is created, it is submitted to DAGScheduler. A stage is comprised of tasks based on partitions of the input data. The DAG scheduler pipelines operators together. The Stages are passed on to the Task Scheduler. The task scheduler launches tasks via cluster manager. And finally the Worker executes the tasks on the Slave.  
 
 __Drill__ - An open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets. It supports a variety of NoSQL databases and file systems, including HBase, MongoDB, MapR-DB, HDFS, MapR-FS, Amazon S3, Azure Blob Storage, Google Cloud Storage, Swift, NAS and local files. A single query can join data from multiple datastores.    
@@ -32,6 +34,8 @@ __Drill__ - An open-source software framework that supports data-intensive distr
 __Flink__ - An open source platform for distributed stream and batch data processing. The core of it is a streaming dataflow engine that provides data distribution, communication, and fault tolerance for distributed computations over data streams.    
 
 __Flume__ - A distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of log data. It has a simple and flexible architecture based on streaming data flows. It is robust and fault tolerant with tunable reliability mechanisms and many failover and recovery mechanisms. It uses a simple extensible data model that allows for online analytic application.  
+
+__Graph Database__ A database that uses graph structures for semantic queries with nodes, edges and properties to represent and store data. A key concept of the system is the graph (or edge or relationship), which directly relates data items in the store.   
 
 __Hadoop__ - The Apache Hadoop software library is a framework that allows for the distributed processing of large data sets across clusters of computers using simple programming models. It is designed to scale up from single servers to thousands of machines, each offering local computation and storage.  
 
