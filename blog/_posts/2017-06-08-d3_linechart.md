@@ -9,7 +9,7 @@ date: 2017-06-08
 modifiedOn: 2017-06-08
 ---
 
-Line chart is also quite commom in reality for people to track changes, especially continuous changes over short or long periods of time. [D3] [1] implements this by _d3.line()_ function under __d3-shape__ module starting from version 4.0.  
+Line chart is also quite commom in reality for people to track changes, especially continuous changes over short or long periods of time. [D3] [1] implements this by _d3.line()_ function under __[d3-shape](https://github.com/d3/d3-shape/blob/master/README.md#lines)__ module starting from version 4.0.  
 
 __1. Simple Line Chart__  
 ------------------------  
