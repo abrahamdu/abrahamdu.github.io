@@ -240,7 +240,6 @@ var browser = g.selectAll(".browser")
 </script>  
 ```  
 
-</script>  
 <u>Reference:</u>    
 ----------------- 
 (1). D3 API Reference, _[https://github.com/d3/d3/blob/master/API.md](https://github.com/d3/d3/blob/master/API.md)_.   
