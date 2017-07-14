@@ -216,7 +216,9 @@ d3.json("/blog/data/all_countries_2015.json", function(error, data) {
 });
 
 </script>
-```
+```  
+
+I also put this example under my [Blocks](https://bl.ocks.org/abrahamdu/fcde15d4d3115c10f0f1bd79f94e2c5d).
 
 <u>Reference:</u>    
 ----------------- 
