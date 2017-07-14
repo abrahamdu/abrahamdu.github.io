@@ -113,7 +113,9 @@ d3.json("/blog/data/all_countries_2015.json", function(error, data) {
       });
 });
 
-</script>  
+</script> 
+
+I also put this example under my [Blocks](https://bl.ocks.org/abrahamdu/03df31f109bea52fa6bab25b4d92888a).
 
 One last thing I would like to mention is that when I first compare the __cluster__ and __tree__ diagram by exactly the same data, the difference is barely observed. After reading some documents especially the example in the [reference 2](https://bl.ocks.org/mbostock/e9ba78a2c1070980d1b530800ce7fa2b), I find this tiny difference at the bottom of each diagram.  
 
