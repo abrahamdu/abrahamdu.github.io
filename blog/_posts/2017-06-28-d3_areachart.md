@@ -6,7 +6,7 @@ category: VISUALIZATION
 tags: [ 'd3', 'html', 'css', 'javascript' ]
 title: 'D3 Area Chart'
 date: 2017-06-28
-modifiedOn: 2017-06-28
+modifiedOn: 2017-07-21
 ---
 
 Quite similar to line chart, area chart could also be used to demonstrate the trends over time for comparison. In this post, I'd like to use the same data in [last blog](http://anotherpeak.org/blog/visualization/2017/06/08/d3_linechart.html) from [W3School Browser Statistics](https://www.w3schools.com/browsers/default.asp), but to draw an area chart to show the market share change by different browsers.  
