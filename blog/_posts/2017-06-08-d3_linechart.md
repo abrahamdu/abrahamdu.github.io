@@ -6,7 +6,7 @@ category: VISUALIZATION
 tags: [ 'd3', 'html', 'css', 'javascript' ]
 title: 'D3 Line Chart'
 date: 2017-06-08
-modifiedOn: 2017-06-08
+modifiedOn: 2017-07-21
 ---
 
 Line chart is also quite commom in reality for people to track changes, especially continuous changes over short or long periods of time. [D3] [1] implements this by _d3.line()_ function under __[d3-shape](https://github.com/d3/d3-shape/blob/master/README.md#lines)__ module starting from version 4.0.  
