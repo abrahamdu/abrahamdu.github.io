@@ -13,6 +13,9 @@ modifiedOn: 2017-11-16
 
 More often than not, we prepare data and put it in some form of flat file as external source. [D3] [1] expands data support by module _d3-dsv_.  It serves as parser and formatter to delimiter-separated values, such as comma and tab. There are mainly three functions under this module: creator of parser/formatter, parser and formatter.  
 
+__1. Parse__  
+------------  
+
 ```javascript
 <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
 <script>
@@ -43,6 +46,8 @@ The _parse_ function used above would also generate a new property for the arry 
 ```  
 ![alt text](/img/blog/d3-tsv3.png)
 
+__2. Format__  
+-------------   
 From the other way around, we can use the same to create a formatter by _d3.dsvFormat_ function. In stead of using parse, _format_/_formatRows_ would be called to format an object to a string.  
 
 ```javascript  
