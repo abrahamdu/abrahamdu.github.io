@@ -4,9 +4,9 @@ section-type: post
 published: true
 category: VISUALIZATION
 tags: [ 'd3', 'javascript' ]
-title: 'Read in Data by D3 - Part 2'
+title: 'Read in Data by D3 - Part 2: D3 Request'
 date: 2017-11-16
-modifiedOn: 2017-11-24
+modifiedOn: 2017-11-26
 ---  
 
 After introducing __d3-dsv__ module from [last blog](http://anotherpeak.org/blog/visualization/2017/10/26/read_in_data_d3_1.html), we learn how to use [D3] [1] to parse different types of flat files. To illustrate different charts [D3] [1] could achieve, a simple data set created during coding is good enough already (see [this](http://anotherpeak.org/blog/visualization/2017/07/02/d3_piechart.html)). But more often than not, it is more common to have an external data source residing in the local server or some remote server for [D3] [1]'s consumption. This blog aims to introduce using __d3-request__ module to pass different types of data files [D3] [1] could consume from the local server.  
