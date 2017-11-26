@@ -4,9 +4,9 @@ section-type: post
 published: true
 category: VISUALIZATION
 tags: [ 'd3', 'javascript' ]
-title: 'Read in Data by D3 - Part 1'
+title: 'Read in Data by D3 - Part 1: D3 TSV'
 date: 2017-10-26
-modifiedOn: 2017-11-24
+modifiedOn: 2017-11-26
 ---  
 
 [D3] [1] stands for data-driven documents, which means data is the oxygen of final visualization. It is always true that a good visualization would have a solid foundation of data. [D3] [1] is not exception.  
