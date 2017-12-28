@@ -422,6 +422,72 @@ a {
     }
 }
 
+/* Portfolio */
+
+.portfolio-item {
+   padding-right: 15px;
+   padding-left: 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 900px;
+   overflow:hidden;
+   min-height:0px !important;
+}
+
+.img-portfolio {
+    margin: 0 auto;
+    width: 450px;
+    height: 350px;
+}
+
+.img-portfolio:hover {
+    opacity: 0.6;
+}
+
+// Preview Panels
+.sb-preview {
+  margin-bottom: 30px;
+  .card {
+    border: 1px solid darken(#fff, 7%);
+    border-bottom: 3px solid darken(#fff, 7%);
+    background: darken(#fff, 4%);
+    .sb-preview-img {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    .card-body {
+      padding: 1.5rem 1.5rem 0;
+    }
+    .card-footer {
+      padding: 0.75rem 1.5rem 1.5rem;
+
+      border: 0;
+      background: transparent;
+      .btn {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.sb-card {
+  margin-bottom: 30px;
+
+  border: 1px solid darken(#fff, 7%);
+  border-bottom: 3px solid darken(#fff, 7%);
+  background: darken(#fff, 4%);
+  .sb-img {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  .btn {
+    font-size: 11px;
+  }
+}
+/* End of Portfolio*/
+
 .btn {
     border-radius: 0;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
