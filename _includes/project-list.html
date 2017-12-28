@@ -1,10 +1,33 @@
 <!-- Project List Start -->
 <section id="{{ page.section-type }}" class="container content-section text-left">
     <div class="row">
-      <div class="col-md-10 col-md-offset-1">
-          {{ page.content | markdownify }}
-          <h4><a href="{{site.baseurl}}/project/">All Projects</a></h4>
-      </div>
+    <div class="col-md-10 col-md-offset-1 text-center">
+        {{ page.content | markdownify }}
+        <div class="container">
+          <div class="row">
+          <div class="col-md-5 sb-preview text-center">
+              <div class="portfolio-item">
+              <a href="http://anotherpeak.org/project/bowang/">
+                <img class="img-portfolio img-responsive center-block fourofour" src="img/project/bowang.png">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">Bowang</h4>
+              </div>
+              </div>
+          </div>
+          <div class="col-md-5 sb-preview text-center">
+              <div class="portfolio-item">
+              <a href="https://dctractor.github.io/">
+                <img class="img-portfolio img-responsive" src="img/project/dctractor.png">
+              </a>
+              <div class="card-body">
+                <h4 class="card-title">DC Tractor Competition</h4>
+              </div>
+              </div>
+          </div>
+        </div>   
+        </div>
     </div>
+    </div>    
 </section>
 <!-- Project List End -->
