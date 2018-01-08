@@ -51,8 +51,6 @@ var svg = d3.select("#world")
             .append("svg")
             .attr("width", width)
             .attr("height", height);
-var offsetL = document.getElementById("world").offsetLeft+20;
-var offsetT = document.getElementById("world").offsetTop+20;
 var tooltip = d3.select("div.tooltip");
 d3.queue()
   .defer(d3.json, "/project/maps/data/world-110m.json")
