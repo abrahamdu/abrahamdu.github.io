@@ -73,7 +73,7 @@ d3.json("/project/maps/data/china.geojson", function(error, china) {
                        .html(d.properties.name);
             })
             .on("mouseout",function(d,i){
-                d3.select(this).attr("fill","white").attr("stroke-width",1);
+                d3.select(this).attr("fill",color(i)).attr("stroke-width",1);
                 tooltip.classed("hidden", true);
             });
 });
