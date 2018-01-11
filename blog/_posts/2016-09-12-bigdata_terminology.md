@@ -6,7 +6,7 @@ category: BigData
 tags: [ 'bigdata' ]
 title: 'Big Data Terminology'
 date: 2016-09-12
-modifiedOn: 2017-06-06
+modifiedOn: 2018-01-11
 ---
 
 __Accumulo__ - A computer software project that developed a sorted, distributed key/value store based on the BigTable technology from Google. It is a system built on top of Apache Hadoop, Apache ZooKeeper, and Apache Thrift. Written in Java, Accumulo has cell-level access labels and server-side programming mechanisms.   
@@ -45,7 +45,9 @@ __HDFS__ - A Java-based file system that provides scalable and reliable data sto
 
 __Hive__ - A data warehouse infrastructure built on top of Hadoop for providing data summarization, query, and analysis. It gives an SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop.  
 
-__Kafka__ - A distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system.  
+__Kafka__ - A distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system.    
+
+__KSQL__ - An open source streaming SQL engine for Apache Kafka. It provides a simple and completely interactive SQL interface for stream processing on Kafka; no need to write code in a programming language such as Java or Python. It supports a wide range of powerful stream processing operations including aggregations, joins, windowing, sessionization, and much more.    
 
 __Lambda Architecture__ - A data-processing architecture designed to handle massive quantities of data by taking advantage of both batch- and stream-processing methods. This approach to architecture attempts to balance latency, throughput, and fault-tolerance by using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data.  
 
