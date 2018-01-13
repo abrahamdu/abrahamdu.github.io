@@ -49,6 +49,8 @@ __Kafka__ - A distributed, partitioned, replicated commit log service. It provid
 
 __KSQL__ - An open source streaming SQL engine for Apache Kafka. It provides a simple and completely interactive SQL interface for stream processing on Kafka; no need to write code in a programming language such as Java or Python. It supports a wide range of powerful stream processing operations including aggregations, joins, windowing, sessionization, and much more.    
 
+__Kubernetes__ -  An open-source system for automating deployment, scaling and management of containerized applications that was originally designed by Google and donated to the Cloud Native Computing Foundation. It aims to provide a "platform for automating deployment, scaling, and operations of application containers across clusters of hosts". It supports a range of container tools, including Docker.  
+
 __Lambda Architecture__ - A data-processing architecture designed to handle massive quantities of data by taking advantage of both batch- and stream-processing methods. This approach to architecture attempts to balance latency, throughput, and fault-tolerance by using batch processing to provide comprehensive and accurate views of batch data, while simultaneously using real-time stream processing to provide views of online data.  
 
 __Mahout__ - A project of the Apache Software Foundation to produce free implementations of distributed or otherwise scalable machine learning algorithms focused primarily in the areas of collaborative filtering, clustering and classification.   
