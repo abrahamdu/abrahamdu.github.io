@@ -5,7 +5,7 @@ title: Maps
 sitemap:
   priority: 1.0
 ---  
-__United States__
+<h1>United States</h1>
 
 <style>
 svg {
@@ -35,7 +35,7 @@ div.tooltip {
       position: absolute;
 }
 </style>
-
+<h2>State and County</h2>
 <svg id="state" width="1200" height="900"></svg>
 <div class="tooltip"></div>
 <script src="https://d3js.org/d3.v4.min.js"></script>
