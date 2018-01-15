@@ -95,6 +95,8 @@ function ready(error, us, st_names, county_names) {
        .attr("class", "state-borders")
        .selectAll("path")
        .data(states_name)
+       .enter()
+       .append("path")
        .attr("d", path);
 };
 </script>   
