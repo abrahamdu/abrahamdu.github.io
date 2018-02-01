@@ -163,7 +163,6 @@ function ready1(error, us, cd, st_names) {
     return st_names.some(function(n) {
       if (d.properties.STATEFP == n.id) return d.name = [n.State,d.properties.CD115FP].join(' ');
     })});
-    console.log(states,cd1,cd_name);
   svg1.append("g")
             .attr("stroke","grey")
 			.attr("stroke-width",1)
