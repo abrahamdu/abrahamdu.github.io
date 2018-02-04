@@ -4,57 +4,95 @@ section-type: project
 title: Maps
 sitemap:
   priority: 1.0
----
-<div id="world">
-    <h2>World:</h2>  
-</div>
-
-<div id="china">
-    <h2>China:</h2>  
-    <h3></h3>
-</div>
+---  
 
 <style>
-    h3 {
-        position: absolute;left:450px;top:250px;
-        color:chartreuse; 
-        font-family: Georgia, "Times New Roman", "FangSong", "仿宋", STFangSong, "华文仿宋", serif;
-        font-size: 40px;
-    }
+body {
+  margin: 0;
+  background-color: #2A2C39;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+}
+#world {
+  width: 100vw;
+  height: 100vh;
+}
+svg rect {
+  fill: #2A2C39;   /* map background colour */
+}
+.country{
+  fill: #d0d0d0;   /* country colour */
+  stroke: #2A2C39; /* country border colour */
+  stroke-width: 1; /* country border width */
+}
+.country-on{
+  fill: #4B5358;   /* highlight colour for selected country */
+}
+.countryLabel{
+  display: none;   /* hide all country labels by default */
+}
+.countryName{
+  fill: #FFFAFF;   /* country label text colour */
+}
+.countryLabelBg{
+  fill: #30BCED;   /* country label background colour */
+}
 </style>
+
+<div>
+
+    <div id="world" style="border: 1px solid white;" width="1000" height="1000">
+    <h2>World:</h2>
+    </div>
+    
+    
+    <div id="china1" style="border: 1px solid white;">
+    <h2>China:</h2>
+    <h3 id='china-title'></h3>
+    </div>
+    
+    <div id="china2">
+    <h2>China:</h2>  
+    </div>
+    
+</div>
+
+
 <script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script>
+<script src="https://d3js.org/topojson.v2.min.js"></script>
 
 <script>
-	var width  = 1200;
-	var height = 1200;
+var margin = {top: 0, right: 0, bottom: 0, left: 0};
+var width = document.getElementById("world").getBoundingClientRect().width-50;
+var height = 1000;
+    //World Map
 	
-	var svg = d3.select("#china").append("svg")
+	var projection = d3.geoMercator()
+                       .center([-120, 10])
+                       .scale([150])
+                       .translate([200, 200])
+                       .rotate([-180,0]);
+	
+	var worldPath = d3.geoPath()
+					.projection(projection);
+    
+	var color = d3.scaleOrdinal(d3.schemeCategory20);
+	
+    var svg1 = d3.select("#world").append("svg")
+        .attr("preserveAspectRatio", "xMidYMid meet")
+        .attr("viewBox", "0 0 " + width + " " + height)
 	    .attr("width", width)
 	    .attr("height", height)
 	    .append("g")
 	    .attr("transform", "translate(0,0)");
-	
-	var projection = d3.geoMercator()
-			   .center([110, 25])
-               .scale([900])
-               .translate([width/2, height/2])
-               .precision([.1]);
-	
-	var path = d3.geoPath()
-					.projection(projection);
-	
-	
-	var color = d3.scaleOrdinal(d3.schemeCategory20c);
-	
-	
-	d3.json("/project/maps/data/china.geojson", function(error, root) {
+    
+	d3.json("/project/maps/data/world-50m.json", function(error, world) {
 		
-		if (error) 
-			return console.error(error);
-		console.log(root.features);
+		if (error) throw error;
 		
-		svg.selectAll("path")
-			.data( root.features )
+         svg1.selectAll("path")
+			.data(topojson.feature(world, world.objects.countries).features)
 			.enter()
 			.append("path")
 			.attr("stroke","#000")
@@ -62,9 +100,59 @@ sitemap:
 			.attr("fill", function(d,i){
 				return color(i);
 			})
-			.attr("d", path )
+			.attr("d", worldPath )
 			.on("mouseover",function(d,i){
-                d3.select(this).attr("fill","white");
+                d3.select(this).attr("fill","blue");
+                //d3.select("h3").text(d.properties.name)
+            })
+            .on("mouseout",function(d,i){
+                d3.select(this).attr("fill",color(i));
+                //d3.select("h3").text("");
+            });
+		
+	});
+
+
+	//China Map
+	
+	var projection = d3.geoMercator()
+			   .center([110, 25])
+               .scale([800])
+               .translate([550, 550])
+               .precision([.1]);
+	
+	var chinaPath = d3.geoPath()
+					.projection(projection);
+	
+	
+	var color = d3.scaleOrdinal(d3.schemeCategory20c);
+	
+    //var zoom = d3.zoom().scaleExtent([1, 9]).on("zoom", move);
+	
+    var svg2 = d3.select("#china1").append("svg")
+	    .attr("width", width)
+	    .attr("height", height)
+        //.call(zoom)
+	    .append("g")
+        //.on("click",click)
+	    .attr("transform", "translate(0,0)");
+    
+	d3.json("/project/maps/data/china.geojson", function(error, china) {
+		
+		if (error) throw error;
+		
+		svg2.selectAll("path")
+			.data( china.features )
+			.enter()
+			.append("path")
+			.attr("stroke","#000")
+			.attr("stroke-width",1)
+			.attr("fill", function(d,i){
+				return color(i);
+			})
+			.attr("d", chinaPath )
+			.on("mouseover",function(d,i){
+                d3.select(this).attr("fill","yellow");
                 d3.select("h3").text(d.properties.name)
             })
             .on("mouseout",function(d,i){
@@ -73,6 +161,16 @@ sitemap:
             });
 		
 	});
+/*
+  function move() {
+  var t = d3.event.translate,
+      s = d3.event.scale;
+  t[0] = Math.min(width / 2 * (s - 1), Math.max(width / 2 * (1 - s), t[0]));
+  t[1] = Math.min(height / 2 * (s - 1) + 230 * s, Math.max(height / 2 * (1 - s) - 230 * s, t[1]));
+  zoom.translate(t);
+  g.style("stroke-width", 1 / s).attr("transform", "translate(" + t + ")scale(" + s + ")");
+}
+*/
 
 </script>
 
