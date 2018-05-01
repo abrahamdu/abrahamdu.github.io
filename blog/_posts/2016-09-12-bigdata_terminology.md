@@ -21,6 +21,8 @@ __Avro__ - A remote procedure call and data serialization framework developed wi
 
 __AWS__ - Amazon Web Services, a suite of cloud-computing services that make up an on-demand computing platform.  
 
+__Bigtop__ - An Apache Foundation project for Infrastructure Engineers and Data Scientists looking for comprehensive packaging, testing, and configuration of the leading open source big data components. It supports a wide range of components/projects, including, but not limited to, Hadoop, HBase and Spark.   
+
 __Cassandra__ - A free and open-source distributed database management system designed to handle large amounts of data across many commodity servers, providing high availability with no single point of failure. It offers robust support for clusters spanning multiple datacenters,[1] with asynchronous masterless replication allowing low latency operations for all clients.  
 
 __Chukwa__ - An open source data collection system for monitoring large distributed systems. Chukwa is built on top of the Hadoop Distributed File System (HDFS) and Map/Reduce framework and inherits Hadoop’s scalability and robustness. Chukwa also includes a ﬂexible and powerful toolkit for displaying, monitoring and analyzing results to make the best use of the collected data.  
